@@ -1,6 +1,32 @@
-# Ignore build files and IDE configs
-**/build/
-**/.gradle/
-**/.idea/
-**/local.properties
-**/*.iml
+# ==========================
+# Android Studio / IDE files
+# ==========================
+*.iml
+/.idea/
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Gradle files
+# ==========================
+.gradle/
+/*/.gradle/
+build/
+/*/build/
+
+# ==========================
+# Local SDK & system files
+# ==========================
+local.properties
+
+# ==========================
+# Captures, native builds
+# ==========================
+/captures
+.externalNativeBuild
+.cxx
+
+# ==========================
+# Logs
+# ==========================
+*.log
