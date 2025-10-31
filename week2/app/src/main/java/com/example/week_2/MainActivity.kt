@@ -39,7 +39,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.week_2.ui.theme.Week2Theme
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
@@ -48,12 +47,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            Week2Theme {
-                    NestedExample(
-                        modifier = Modifier.padding()
-                    )
-
-            }
+            TodoApp()
         }
     }
 }
@@ -176,7 +170,5 @@ fun NestedExample(modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    Week2Theme {
-        NestedExample()
-    }
+
 }
